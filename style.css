@@ -1,0 +1,91 @@
+* {
+    margin: 0%;
+}
+body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+nav {
+    background-color: midnightblue;
+    padding: 2%;
+    text-align: right;
+}
+
+nav ol {
+    color: white;
+    display: inline-block;
+}
+
+main {
+    width: 95%;
+    margin: 0 auto;
+}
+
+h1 {
+    padding: 1em;
+    color:rgb(55, 53, 53);
+}
+
+h3 {
+    color:rgb(55, 53, 53);
+    text-align: center;
+    width: 100%;
+}
+
+.tecnologias h3 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+article {
+    padding: 20px;
+    margin-top: 1%;
+    display: flex;
+}
+
+p {
+    color:rgb(55, 53, 53);
+    padding: 1em; 
+}
+
+.parrafo1, .parrafo2, .parrafo3 {
+    flex:content;
+    padding-left: 1%;
+    width:3em;
+}
+
+.table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+.table th, .table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid midnightblue;
+}
+
+tr {
+    color: midnightblue;
+    font-weight: bold;
+    justify-content: center;
+    width: 120 px;
+}
+
+td {
+    color:rgb(55, 53, 53);
+}
+
+input{
+    width: 120px;
+}
+
+footer{
+    padding: 2px;
+}
+
+.footer{
+    display: flex;
+    margin-top: 1%;
+}
