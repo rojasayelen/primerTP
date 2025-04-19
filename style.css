@@ -1,8 +1,9 @@
-* {
-    margin: 0%;
+*{
+    margin: 0;
 }
+
 body {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 nav {
@@ -23,69 +24,179 @@ main {
 
 h1 {
     padding: 1em;
-    color:rgb(55, 53, 53);
+    color: rgb(55,53,53);
+    text-align: center;
 }
 
 h3 {
-    color:rgb(55, 53, 53);
+    color: rgb(55,53,53);
     text-align: center;
     width: 100%;
 }
 
-.tecnologias h3 {
-    text-align: center;
-    margin-bottom: 1em;
-}
-
 article {
-    padding: 20px;
-    margin-top: 1%;
     display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    padding: 2em;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 p {
-    color:rgb(55, 53, 53);
-    padding: 1em; 
+    color: rgb(55,53,53);
+    border-color: midnightblue;
+    border-width: 2px;
+    padding: 1em;
+}
+
+.parrafo3 {
+    width: 100%;
 }
 
 .parrafo1, .parrafo2, .parrafo3 {
-    flex:content;
-    padding-left: 1%;
-    width:3em;
+    flex:1;
+    min-width: 250px;
+    text-align: justify;
 }
 
-.table {
-    margin: 0 auto;
-    border-collapse: collapse;
+table {
     width: 80%;
+    margin: 2em auto;
+    border-collapse: collapse;
+    font-size: 16px;
+    box-shadow: 0 0 6px rgb(0,0,0,1);
 }
 
-.table th, .table td {
-    padding: 10px;
+th, td {
+    border: 1px solid #ccc;
+    padding: 12px;
     text-align: center;
-    border: 1px solid midnightblue;
 }
 
-tr {
+th {
+    background-color: midnightblue;
+    color: white;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
     color: midnightblue;
     font-weight: bold;
-    justify-content: center;
-    width: 120 px;
 }
 
-td {
-    color:rgb(55, 53, 53);
+.contacto-titulo {
+    padding: 1em 0;
+    font-size: 2em;
 }
 
-input{
-    width: 120px;
-}
-
-footer{
-    padding: 2px;
-}
-
-.footer{
+.formulario {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 2em;
+    width: 90%;
+    max-width: 500px;
+    margin: 2em auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 20 px rgba(0,0,0,0.1);
     display: flex;
-    margin-top: 1%;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.formulario label{
+    font-weight: bold;
+    margin-bottom: 0.3em;
+    text-align: left;
+}
+
+.formulario input, .formulario textarea {
+    width: 100%;
+    padding: 0.9em;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 8%;
+    box-sizing: border-box;
+}
+
+.formulario textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.formulario button {
+    background-color:  midnightblue;
+    color: white;
+    border: none;
+    padding: 1em;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.formulario button:hover {
+    background-color: midnightblue;
+}
+
+.tel{
+    color: darkgray;
+}
+.contenido-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1em;
+    margin: 2em auto;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.columna {
+    flex: 1;
+}
+
+.parrafos-1-2 {
+    flex: 1;
+}
+
+.parrafo-3 {
+    flex: 1;
+    line-height: 1.6;
+}
+
+.imagen {
+    flex: 1;
+}
+
+.columna p {
+    margin-bottom: 1em;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.imange img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10 px rgba(0,0,0,0.1);
+}
+
+.linkedIn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: midnightblue;
+    margin: 0 auto;
+    padding: 0;
+    height: 3em;
+}
+
+.ln-texto{
+    color: #f5f5ff;
+    text-align: center;
 }
