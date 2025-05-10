@@ -50,11 +50,11 @@ p {
     padding: 1em;
 }
 
-.parrafo3 {
+.parrafo3, parrafo4 {
     width: 100%;
 }
 
-.parrafo1, .parrafo2, .parrafo3 {
+.parrafo1, .parrafo2, .parrafo3, .parrafo4 {
     flex:1;
     min-width: 250px;
     text-align: justify;

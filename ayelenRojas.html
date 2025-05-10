@@ -21,7 +21,7 @@
         <main>
             <section>
                 <h1 class="titulo">CONSULTORA ROJAS Y ASOCIADOS</h1>
-                <h3>INNOVACION TECNOLOGICA EN FINANZAS E IMPUESTOS EN PEQUEÑOS NEGOCIOS</h3>
+                <h3>INNOVACION Y TECNOLOGICA APLICADA A FINANZAS E IMPUESTOS</h3>
                 <article>
                     <div class="contenido-principal">
                         <div class="columna parrafos-1-2">
@@ -30,12 +30,18 @@
                             </p>
                             <p class="parrafo2">
                                 El tener amplia experiencia en herramientas tecnológicas, nos da una gran ventaja competitiva en el mercado. Trabajamos en alianza con las mejores compañias tenologicas con soporte global lo que permite gestionar costos a medida.
+                                Alianza estratégica con AWS, lo que nos permite ofrecer soluciones de infraestructura y soporte a nuestros clientes.
                             </p>
                         </div>
-                                    
-                        <p class="columna parrafo-3">
-                        Ofrecemos desde automatizaciones en la parte comercial, administrativa y de procesos de control, como así también la elaboración de cashflows económicos y financieros. Realizamos  análisis de los posibles desvíos y sus impactos en cada una de las herramientas proyectadas. Acompañamos a los emprendedores en su desarrollo profesional y comercial.
-                        </p>
+                        <div class="columna parrafo-3-4">          
+                            <p class="parrafo3">
+                                Sabemos que la tecnología es una herramienta fundamental para el desarrollo de los negocios. Por eso, trabajamos en conjunto con nuestros clientes para entender sus necesidades y ofrecer soluciones personalizadas que les permitan optimizar sus procesos y mejorar su rentabilidad.
+                            </p>
+                              <p class="parrafo4">
+                                Ofrecemos automatizaciones en tareas administrativas; de procesos de control, como así también la elaboración de cashflows económicos y financieros. Realizamos  análisis de los posibles desvíos y sus impactos en cada una de las herramientas proyectadas. Acompañamos a los emprendedores en su desarrollo profesional y comercial.
+                            </p>
+                        </div>  
+                        
                         <div class="columna imagen">
                             <img class="team" src="./imagenes/team.jpg" alt="Imagen del equipo profesional">
                         </div>
@@ -73,7 +79,7 @@
         <footer>
             <div>
                 <h3 class="contacto-titulo">Contáctenos</h3>
-                    <form class="formulario">
+                    <form class="formulario" onsubmit="enviarFormulario(event)">
                         <label for="nombre">Nombre y Apellido</label>
                         <input name="nombre" type="text">
                         <label for="tel">Teléfono de contacto</label>
@@ -81,11 +87,11 @@
                         <label for="email">E-Mail</label>
                         <input name="email" type="email">
                         <label for="mensaje">Deje su mensaje aquí</label>
-                        <input name="mensaje" type="text">
+                        <textarea name="mensaje" type="text" rows="10" cols="1"></textarea>
                         <button type="submit">Enviar</button>
                     </form>
                     <div class="linkedIn">
-                        <a href="https://www.linfa-linkedin-kedin.com/in/ayelen-rojas-b8550315/">
+                        <a href="https://www.linkedin.com/in/ayelen-rojas-b8550315/">
                             <h4 class="ln-texto">Visite mi perfil de LinkedIn</h4>
                         </a>
                     
@@ -93,5 +99,11 @@
                 </div>
             </div>
         </footer>
+        <script>
+            function enviarFormulario(event) {
+                event.preventDefault(); // Evita el envío del formulario
+                alert("Gracias por su mensaje. Nos pondremos en contacto pronto.");
+            }
+        </script>
     </body>
 </html>
