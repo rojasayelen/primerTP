@@ -201,6 +201,10 @@ footer a {/*Cambiar color al pie*/
     height: 3em;
 }
 
+a:hover {
+    transform: scale(1.05);
+    font-size: 1.2em;
+}    
 .ln-texto{
     color: #f5f5ff;
     text-align: left;
