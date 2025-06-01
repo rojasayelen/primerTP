@@ -3,18 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Rojas y Asociados</title>
 <!--Este es el proyecto de Ayelen Rojas-->
 </head>
     <body>
         <header>
             <nav>
-                <ul><!--lista ordenada de los servicios ofrecidos dentro del navegador-->
-                    <ol>Servicios</ol>
-                    <ol>Casos de Éxito</ol>
-                    <ol>Socios Estratégicos</ol>
-                    <ol>Contacto</ol>
+                <ul class="menu"><!--agregar href de los servicios ofrecidos dentro del navegador-->
+                  <li><a>Servicios</a></li>
+                   <li><a>Casos de Éxito</a></li>
+                    <li><a>Socios Estratégicos</a></li>
+                    <li><a>Sobre Mi</a></li>
+                    <li><a>Qué Hago</a></li>
+                    <a class="contacto" href="#formulario">Contacto</a>
                 </ul>
             </nav>
         </header>
@@ -43,10 +51,27 @@
                         </div>  
                         
                         <div class="columna imagen"><!--Agregar otra imagen relacionada a IT-->
-                            <img class="team" src="./imagenes/team.jpg" alt="Imagen del equipo profesional">
+                            <img class="team" src="./assets/img/team.jpg" alt="Imagen del equipo profesional">
                         </div>
                     </div>
                 </article>
+            </section>
+            <section id="servicios" class="seccion-servicios">
+                <h2 class="titulo-seccion">QUÉ HAGO</h2>
+                <div class="servicios-grid">
+                    <article class="servicio-card">
+                        <h3>Automatización de Procesos</h3>
+                        <p>Diseño e implemento soluciones para automatizar tareas repetitivas en facturación, cobranzas y contabilidad, utilizando herramientas de software y scripts para reducir errores y ahorrar tiempo.</p>
+                    </article>
+                    <article class="servicio-card">
+                        <h3>Análisis Financiero con Power BI</h3>
+                        <p>Transformo datos crudos en información valiosa. Creo dashboards interactivos para visualizar la salud financiera de tu empresa, analizar tendencias y proyectar flujos de caja.</p>
+                    </article>
+                    <article class="servicio-card">
+                        <h3>Asesoría Impositiva Estratégica</h3>
+                        <p>Ofrezco consultoría fiscal para optimizar tu carga tributaria y asegurar el cumplimiento normativo, todo con el soporte de herramientas de control digital.</p>
+                    </article>
+                </div>
             </section>
             <section class="tecnologias">
                 <article>
@@ -75,11 +100,27 @@
                     </table>
                 </article>
             </section>
+            <section id="sobre-mi" class="seccion-sobre-mi">
+                <h2 class="titulo-seccion">SOBRE MÍ</h2>
+                <div class="sobre-mi-contenido">
+                    <div class="sobre-mi-imagen">
+                        <img src="./assets/img/foto-Aye.jpg" alt="Foto de Ayelen Rojas"> 
+                    </div>
+                    <div class="sobre-mi-texto">
+                        <p>
+                            Soy Ayelen Rojas, Contadora Pública con una profunda pasión por la tecnología. Con más de [Número, ej: 10] años de experiencia en el sector financiero y fiscal, he dedicado mi carrera a cerrar la brecha entre las finanzas tradicionales y las soluciones tecnológicas innovadoras.
+                        </p>
+                        <p>
+                            Mi objetivo es transformar procesos complejos en sistemas eficientes y automatizados, permitiendo a mis clientes enfocarse en lo que realmente importa: el crecimiento de sus negocios. Creo firmemente que la tecnología no es solo una herramienta, sino un aliado estratégico para la toma de decisiones inteligentes.
+                        </p>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer><!--Pie de mi sitio web / agregar iconos a mi formulario; a las redes y a github-->
             <div>
-                <h3 class="contacto-titulo">Contáctenos</h3>
-                <form class="formulario" onsubmit="enviarFormulario(event)">
+                <h3 class="contacto-titulo">Contáctenos"</h3>
+                <form class="formulario" id="formulario" onsubmit="enviarFormulario(event)">
                     <label for="nombre">Nombre y Apellido</label>
                     <input name="nombre" type="text">
                     <label for="tel">Teléfono de contacto</label>
@@ -88,15 +129,23 @@
                     <input name="email" type="email">
                     <label for="mensaje">Deje su mensaje aquí</label>
                     <textarea name="mensaje" type="text" rows="10" cols="1"></textarea>
-                    <button type="submit">Enviar</button>
+                    <button type="submit"><i class="fas fa-paper-plane"></i> Enviar</button>
                 </form>
-                <div class="linkedIn"><!--Agregar github proxima entrega-->
-                    <a href="https://www.linkedin.com/in/ayelen-rojas-b8550315/" target="_blank">
-                        <h4 class="ln-texto">Visite mi perfil de LinkedIn</h4>
+                 <div class="social-links-bar">
+                <div class="social-link-item">
+                    <a href="https://www.linkedin.com/in/ayelen-rojas-b8550315/" target="_blank" class="ln-link">
+                        <i class="fab fa-linkedin"></i> 
+                        <span class="ln-texto">Visite mi perfil de LinkedIn</span>
                     </a>
                 </div>
-                <p class="copyRight">Derechos Reservados</p>  
+                <div class="social-link-item">
+                    <a href="https://github.com/rojasayelen" target="_blank" class="github-link">
+                        <i class="fab fa-github"></i> 
+                        <span class="repo-texto">Mis Repositorios</span>
+                    </a>
+                </div>
             </div>
+            <p class="copyRight">Derechos Reservados</p> 
         </footer>
         <script>/*Scripts con funciones para mi sitio*/
             /*function enviarFormulario(event) {
