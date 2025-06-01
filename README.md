@@ -35,12 +35,12 @@ El proyecto sigue una estructura organizada con carpetas separadas para:
 ## Estructura de Carpetas del Proyecto
 
 mi-portfolio-ayelen/
-├── assets/ 
-│   └── img/ 
-│       ├── team.jpg 
-│       ├── placeholder-ayelen.jpg 
-│       └── sample.png 
-├── css/ 
-│   └── style.css 
-├── index.html 
-└── README.md 
+├── assets/
+│   └── img/
+│       ├── team.jpg
+│       ├── placeholder-ayelen.jpg
+│       └── sample.png
+├── css/
+│   └── style.css
+├── index.html
+└── README.md
