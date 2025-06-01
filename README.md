@@ -1,4 +1,3 @@
-# primerTP
 # Portfolio Profesional - Rojas y Asociados (Ayelen Rojas)
 
 Este es el proyecto para la Práctica Formativa 2, donde se busca mejorar un portfolio web aplicando diversas técnicas de CSS y buenas prácticas de desarrollo.
@@ -36,11 +35,12 @@ El proyecto sigue una estructura organizada con carpetas separadas para:
 ## Estructura de Carpetas del Proyecto
 
 mi-portfolio-ayelen/
+├── assets/
+│   └── img/
+│       ├── team.jpg
+│       ├── placeholder-ayelen.jpg  
+│       └── sample.png
 ├── css/
 │   └── style.css
-├── imagenes/  
-│   ├── team.jpg
-│   ├── placeholder-ayelen.jpg  
-│   └── sample.png  (si decides agregar la vista previa para el README)
 ├── index.html
 └── README.md
