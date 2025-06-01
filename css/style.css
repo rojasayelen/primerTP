@@ -562,15 +562,203 @@ footer a {
 
 /* Tablet Vertical y pantallas más pequeñas (hasta 768px) */
 @media (max-width: 768px) {
-    /* Estilos para este tamaño */
+     body {
+        font-size: 14px;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    nav {
+        padding: 10px 15px;
+        text-align: center;
+    }
+    nav .menu {
+        text-align: center;
+    }
+    nav .menu li {
+        display: block;
+        margin-left: 0;
+        margin-bottom: 8px;
+    }
+    nav .menu li:last-of-type { /* Para el último li que contiene el contacto */
+        margin-bottom: 0;
+    }
+    nav .menu li a {
+        display: block;
+        padding: 10px;
+        font-size: 1em;
+    }
+    /* Para el enlace de Contacto que no está en un LI, si no lo cambiaste en HTML */
+    nav .menu > a.contacto {
+        display: block;
+        padding: 10px;
+        margin-top: 5px;
+        color: white; /* Asegura color si no lo hereda bien */
+        text-decoration: none;
+    }
+
+
+    .contenido-principal .columna {
+        width: 95%;
+        margin-bottom: 25px;
+    }
+    .contenido-principal .imagen {
+         max-width: 350px;
+    }
+
+    .servicios-grid,
+    .casos-exito-grid {
+        gap: 15px;
+    }
+    .servicio-card,
+    .caso-exito-card {
+        flex-basis: 100%;
+        padding: 20px;
+    }
+
+    .sobre-mi-contenido {
+        gap: 25px;
+    }
+    .sobre-mi-imagen {
+        max-width: 200px;
+    }
+
+    h1.titulo {
+        font-size: 2em;
+    }
+    .titulo-seccion {
+        font-size: 1.7em;
+        margin-bottom: 25px;
+    }
+
+    .table {
+        font-size: 13px;
+        width: 100%;
+    }
+    .table th, .table td {
+        padding: 8px;
+    }
+
+    .formulario {
+        width: 95%;
+        padding: 1.5em;
+    }
+    .contacto-titulo {
+        font-size: 1.8em;
+    }
 }
 
 /* Móvil Grande y pantallas más pequeñas (hasta 480px) */
 @media (max-width: 480px) {
-    /* Estilos para este tamaño */
+   body {
+        font-size: 13px;
+    }
+
+    nav .menu li a {
+        font-size: 0.95em;
+        padding: 8px;
+    }
+    nav .menu > a.contacto {
+        font-size: 0.95em;
+        padding: 8px;
+    }
+
+
+    .seccion-servicios,
+    .seccion-sobre-mi,
+    .seccion-casos-exito,
+    .tecnologias {
+        padding: 40px 15px;
+    }
+
+    h1.titulo {
+        font-size: 1.8em;
+        padding: 0.7em;
+    }
+    .titulo-seccion {
+        font-size: 1.5em;
+    }
+    
+    .servicio-card h3 {
+        font-size: 1.3em;
+    }
+    .caso-exito-card h3 {
+        font-size: 1.2em;
+    }
+    .sobre-mi-texto p {
+        font-size: 1em;
+        line-height: 1.7;
+    }
+
+    .table th, .table td {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .formulario input, .formulario textarea {
+        padding: 0.8em;
+    }
+    .formulario button {
+        padding: 0.9em;
+    }
+    .contacto-titulo {
+        font-size: 1.6em;
+    }
 }
 
 /* Móvil Pequeño (hasta 375px) */
 @media (max-width: 375px) {
-    /* Estilos para este tamaño */
+      body {
+        font-size: 12px;
+    }
+    main {
+        width: 100%;
+        padding: 0 5px; /* Evita que el contenido se pegue a los bordes */
+        box-sizing: border-box;
+    }
+    
+    nav {
+        padding: 10px;
+    }
+    nav .menu li {
+        margin-bottom: 5px;
+    }
+    nav .menu li a {
+        font-size: 0.9em;
+        padding: 6px 8px;
+    }
+     nav .menu > a.contacto {
+        font-size: 0.9em;
+        padding: 6px 8px;
+    }
+
+    h1.titulo {
+        font-size: 1.6em;
+    }
+    .titulo-seccion {
+        font-size: 1.4em;
+    }
+    
+    .servicio-card,
+    .caso-exito-card {
+        padding: 15px;
+    }
+    .servicio-card h3 {
+        font-size: 1.2em;
+    }
+    .caso-exito-card h3 {
+        font-size: 1.1em;
+    }
+
+    .table th, .table td {
+        padding: 5px;
+        font-size: 11px;
+    }
+
+    .copyRight {
+        font-size: 0.7em;
+        padding: 0.8em 5px;
+    }
 }
